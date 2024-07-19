@@ -1,0 +1,76 @@
+{
+    "address":"0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "abi": [
+        {
+          "type": "function",
+          "name": "fee",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "",
+              "type": "uint256",
+              "internalType": "uint256"
+            }
+          ],
+          "stateMutability": "view"
+        },
+        {
+          "type": "function",
+          "name": "join",
+          "inputs": [
+            {
+              "name": "creator",
+              "type": "address",
+              "internalType": "address payable"
+            }
+          ],
+          "outputs": [],
+          "stateMutability": "payable"
+        },
+        {
+          "type": "function",
+          "name": "members",
+          "inputs": [
+            {
+              "name": "",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "",
+              "type": "address",
+              "internalType": "address"
+            }
+          ],
+          "outputs": [
+            {
+              "name": "",
+              "type": "bool",
+              "internalType": "bool"
+            }
+          ],
+          "stateMutability": "view"
+        },
+        {
+          "type": "error",
+          "name": "AlreadyMember",
+          "inputs": [
+            {
+              "name": "creator",
+              "type": "address",
+              "internalType": "address"
+            }
+          ]
+        },
+        {
+          "type": "error",
+          "name": "PaymentRejected",
+          "inputs": []
+        },
+        {
+          "type": "error",
+          "name": "PaymentTooLow",
+          "inputs": []
+        }
+    ]
+}
