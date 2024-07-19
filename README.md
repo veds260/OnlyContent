@@ -2,8 +2,20 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, run 'npm i' or 'npm install' to install all the dependencies for the project. 
 
+Then run WSL in your terminal and create some wallets in Foundry:
+
+Use command, 'anvil'
+If you don't have a WSL, you can easily download it by a simple search on Google and set it up first. 
+
+Then create a contract in the blockchain folder of the file by writing the following commands:
+'cd blockchain' to change directory to the file blockchain
+'forge script script/OnlyContent.s.sol:OnlyContentScript --fork-url http://localhost:8545 --broadcast' to create a contract. 
+
+Now, copy the contract address from the WSL terminal and paste it in the 'contract.json' file in address.
+
+Now, you can simply run the project by following commands:
 ```bash
 npm run dev
 # or
